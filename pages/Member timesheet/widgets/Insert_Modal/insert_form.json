@@ -339,6 +339,26 @@
           "position": 6,
           "sourceData": 0
         },
+        "is_support": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accessor": "is_support",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "boolean",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.is_support || false))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "fieldType": "Checkbox",
+          "identifier": "is_support",
+          "isCustomField": true,
+          "isDisabled": false,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Support dự án khác",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "is_support",
+          "position": 3,
+          "sourceData": false
+        },
         "member_id": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "accessor": "member_id",
@@ -543,26 +563,6 @@
           "shortcuts": false,
           "sourceData": "2024-07-02",
           "timePrecision": "None"
-        },
-        "is_support": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "accessor": "is_support",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "boolean",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.is_support || false))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "fieldType": "Checkbox",
-          "identifier": "is_support",
-          "isCustomField": true,
-          "isDisabled": false,
-          "isRequired": false,
-          "isVisible": true,
-          "label": "Support dự án khác",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "is_support",
-          "position": 3,
-          "sourceData": false
         }
       },
       "dataType": "object",
