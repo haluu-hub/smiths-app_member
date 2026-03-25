@@ -216,6 +216,15 @@
     },
     {
       "key": "schema.__root_schema__.children.working_date.minDate"
+    },
+    {
+      "key": "schema.__root_schema__.children.is_support.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.is_support.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.is_support.borderRadius"
     }
   ],
   "dynamicHeight": "FIXED",

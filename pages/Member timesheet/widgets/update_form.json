@@ -207,6 +207,15 @@
     },
     {
       "key": "boxShadow"
+    },
+    {
+      "key": "schema.__root_schema__.children.is_support.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.is_support.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.is_support.borderRadius"
     }
   ],
   "dynamicHeight": "FIXED",
