@@ -590,7 +590,8 @@
         "col1": 5,
         "col2": "skill B",
         "col3": 9,
-        "col4": true
+        "col4": true,
+        "is_support": false
       }
     }
   },
