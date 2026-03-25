@@ -3,7 +3,7 @@
   "autoGenerateForm": true,
   "backgroundColor": "#fff",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 81,
+  "bottomRow": 78,
   "boxShadow": "none",
   "childStylesheet": {
     "ARRAY": {
@@ -264,7 +264,7 @@
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "SECONDARY"
   },
-  "rightColumn": 64,
+  "rightColumn": 63,
   "schema": {
     "__root_schema__": {
       "accessor": "__root_schema__",
@@ -341,7 +341,7 @@
         },
         "is_support": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "accessor": "is_support",
+          "accessor": "chkSupportProject",
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
@@ -585,7 +585,8 @@
       }
     }
   },
-  "scrollContents": true,
+  "scrollContents": false,
+  "shouldScrollContents": true,
   "showReset": true,
   "sourceData": "",
   "submitButtonLabel": "Submit",
@@ -595,8 +596,8 @@
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "PRIMARY"
   },
-  "title": "Insert Row",
-  "topRow": 0,
+  "title": "Creat timesheet",
+  "topRow": 4,
   "type": "JSON_FORM_WIDGET",
   "version": 1,
   "widgetId": "o8oiq6vwkk",

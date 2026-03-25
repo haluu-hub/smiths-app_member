@@ -35,14 +35,15 @@
     "timesheet_type_id",
     "amount",
     "week_id",
-    "customColumn1"
+    "customColumn1",
+    "is_support"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1736932386857,
+  "columnUpdatedAt": 1774423944413,
   "columnWidthMap": {
     "actual_hours": 135,
     "customColumn1": 107,
@@ -137,6 +138,9 @@
     },
     {
       "key": "boxShadow"
+    },
+    {
+      "key": "primaryColumns.is_support.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -184,8 +188,8 @@
   "onPageChange": "{{SelectQuery.run()}}",
   "onSearchTextChanged": "{{SelectQuery.run()}}",
   "onSort": "{{SelectQuery.run()}}",
-  "originalBottomRow": 91,
-  "originalTopRow": 12,
+  "originalBottomRow": 78,
+  "originalTopRow": 15,
   "parentColumnSpace": 16.3125,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
@@ -305,10 +309,44 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "Estimated hours",
       "notation": "standard",
       "originalId": "estimated_hours",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "is_support": {
+      "alias": "is_support",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "checkbox",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"is_support\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "is_support",
+      "index": 10,
+      "isCellEditable": true,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Support dự án khác",
+      "notation": "standard",
+      "originalId": "is_support",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

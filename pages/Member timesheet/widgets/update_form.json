@@ -200,9 +200,6 @@
       "key": "schema.__root_schema__.children.type.borderRadius"
     },
     {
-      "key": "title"
-    },
-    {
       "key": "isVisible"
     },
     {
@@ -568,7 +565,7 @@
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "PRIMARY"
   },
-  "title": "Update Row timesheet_id: {{data_table.selectedRow.timesheet_id}}",
+  "title": "Update timesheet",
   "topRow": 0,
   "topRowBeforeCollapse": 0,
   "type": "JSON_FORM_WIDGET",
