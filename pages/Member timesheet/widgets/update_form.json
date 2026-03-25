@@ -351,7 +351,7 @@
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.is_support || false))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "fieldType": "Checkbox",
           "identifier": "is_support",
-          "isCustomField": true,
+          "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
           "isVisible": true,

@@ -8,5 +8,5 @@ UPDATE public."timesheet" SET
 		"actual_hours" = '{{update_form.fieldState.actual_hours.isVisible ? update_form.formData.actual_hours : update_form.sourceData.actual_hours}}',
 		"amount" = '{{update_form.fieldState.amount.isVisible ? update_form.formData.amount : update_form.sourceData.amount}}',
 		"week_id" = '{{update_form.fieldState.week_id.isVisible ? update_form.formData.week_id : update_form.sourceData.week_id}}',
-		"is_support" = '{{update_form.formData.is_support || false}}'
+		"is_support" = {{update_form.formData.is_support || false}}
 WHERE "timesheet_id" = {{data_table.selectedRow.timesheet_id}};
