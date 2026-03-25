@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO public.\"timesheet\" (\n\t\"note\",\n\t\"member_id\",\n\t\"project_id\",\n\t\"timesheet_type_id\",\n\t\"working_date\",\n\t\"estimated_hours\",\n\t\"actual_hours\",\n\t\"amount\",\n\t\"week_id\")\nVALUES (\n\t'{{insert_form.formData.note}}',\n\t'{{insert_form.formData.member_id}}',\n\t'{{insert_form.formData.project_id}}',\n\t'{{insert_form.formData.timesheet_type_id}}',\n\t'{{insert_form.formData.working_date}}',\n\t'{{insert_form.formData.estimated_hours}}',\n\t'{{insert_form.formData.actual_hours}}',\n\t'{{insert_form.formData.amount}}',\n\t'{{insert_form.formData.week_id}}');",
+      "body": "INSERT INTO public.\"timesheet\" (\n\t\"note\",\n\t\"member_id\",\n\t\"project_id\",\n\t\"timesheet_type_id\",\n\t\"working_date\",\n\t\"estimated_hours\",\n\t\"actual_hours\",\n\t\"amount\",\n\t\"week_id\",\n\t\"is_support\")\nVALUES (\n\t'{{insert_form.formData.note}}',\n\t'{{insert_form.formData.member_id}}',\n\t'{{insert_form.formData.project_id}}',\n\t'{{insert_form.formData.timesheet_type_id}}',\n\t'{{insert_form.formData.working_date}}',\n\t'{{insert_form.formData.estimated_hours}}',\n\t'{{insert_form.formData.actual_hours}}',\n\t'{{insert_form.formData.amount}}',\n\t'{{insert_form.formData.week_id}}',\n\t'{{chkSupportProject.isChecked || false}}');",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
