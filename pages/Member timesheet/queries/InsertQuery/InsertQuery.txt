@@ -7,7 +7,8 @@ INSERT INTO public."timesheet" (
 	"estimated_hours",
 	"actual_hours",
 	"amount",
-	"week_id")
+	"week_id",
+	"is_support")
 VALUES (
 	'{{insert_form.formData.note}}',
 	'{{insert_form.formData.member_id}}',
@@ -17,4 +18,5 @@ VALUES (
 	'{{insert_form.formData.estimated_hours}}',
 	'{{insert_form.formData.actual_hours}}',
 	'{{insert_form.formData.amount}}',
-	'{{insert_form.formData.week_id}}');
+	'{{insert_form.formData.week_id}}',
+	'{{chkSupportProject.isChecked || false}}');
