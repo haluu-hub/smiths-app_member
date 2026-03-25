@@ -288,7 +288,7 @@
           "label": "Actual hours",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "actual_hours",
-          "position": 4,
+          "position": 5,
           "sourceData": 2
         },
         "amount": {
@@ -310,7 +310,7 @@
           "label": "Amount",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "amount",
-          "position": 6,
+          "position": 7,
           "sourceData": 2
         },
         "estimated_hours": {
@@ -332,7 +332,7 @@
           "label": "Allocate hours",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "estimated_hours",
-          "position": 5,
+          "position": 6,
           "sourceData": 2
         },
         "member_id": {
@@ -377,7 +377,7 @@
           "label": "Note",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "note",
-          "position": 7
+          "position": 8
         },
         "project": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -398,7 +398,7 @@
           "label": "Project",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "project",
-          "position": 9,
+          "position": 10,
           "sourceData": "Pronexus SDC"
         },
         "project_id": {
@@ -466,7 +466,7 @@
           "label": "Type",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "type",
-          "position": 10,
+          "position": 11,
           "sourceData": "Regular"
         },
         "week_id": {
@@ -488,7 +488,7 @@
           "label": "Week Id",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "week_id",
-          "position": 8,
+          "position": 9,
           "sourceData": 45
         },
         "working_date": {
@@ -512,10 +512,30 @@
           "labelTextSize": "0.875rem",
           "maxDate": "2121-12-31T18:29:00.000Z",
           "originalIdentifier": "working_date",
-          "position": 3,
+          "position": 4,
           "shortcuts": false,
           "sourceData": "2024-07-02",
           "timePrecision": "minute"
+        },
+        "is_support": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "is_support",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "boolean",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.is_support || false))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Checkbox",
+          "identifier": "is_support",
+          "isCustomField": true,
+          "isDisabled": false,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Support dự án khác",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "is_support",
+          "position": 3,
+          "sourceData": false
         }
       },
       "dataType": "object",

@@ -19,4 +19,4 @@ VALUES (
 	'{{insert_form.formData.actual_hours}}',
 	'{{insert_form.formData.amount}}',
 	'{{insert_form.formData.week_id}}',
-	'{{chkSupportProject.isChecked || false}}');
+	'{{insert_form.formData.is_support || false}}');
