@@ -1,0 +1,8 @@
+SELECT t.working_date x, sum(t.actual_hours) y FROM public."timesheet" t 
+LEFT JOIN member m on m.member_id = t.member_id 
+WHERE m.email = '{{appsmith.user.email}}'
+AND t.working_date BETWEEN '{{FromDatePicker.selectedDate}}' AND '{{ToDatePicker.selectedDate}}'
+GROUP BY t.working_date
+ORDER BY "{{data_table.sortOrder.column || 'working_date'}}" {{data_table.sortOrder.order || 'ASC'}}
+LIMIT {{data_table.pageSize}}
+OFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};

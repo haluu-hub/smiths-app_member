@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "672ad31356f6bb0532b907ed_4fe5e6aa-3dc4-4825-b5c6-298019a70e23",
+  "id": "Daily effort_JSDateTime",
+  "unpublishedCollection": {
+    "name": "JSDateTime",
+    "pageId": "Daily effort",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}
