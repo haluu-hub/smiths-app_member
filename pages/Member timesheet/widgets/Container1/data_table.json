@@ -35,7 +35,8 @@
     "timesheet_type_id",
     "amount",
     "week_id",
-    "customColumn1"
+    "customColumn1",
+    "is_support"
   ],
   "columnSizeMap": {
     "status": 75,
@@ -137,6 +138,9 @@
     },
     {
       "key": "boxShadow"
+    },
+    {
+      "key": "primaryColumns.is_support.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -622,6 +626,31 @@
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "is_support": {
+      "alias": "is_support",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "columnType": "checkbox",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"is_support\"] === true || currentRow[\"is_support\"] === \"true\"))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "is_support",
+      "index": 13,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Support dự án khác",
+      "originalId": "is_support",
+      "textSize": "0.875rem",
       "verticalAlignment": "CENTER",
       "width": 150
     }
