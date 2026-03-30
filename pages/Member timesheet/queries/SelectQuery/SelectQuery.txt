@@ -5,5 +5,4 @@ LEFT JOIN member m on m.member_id = t.member_id
 WHERE m.email = '{{appsmith.user.email}}'
 AND t.working_date BETWEEN '{{FromDatePicker.formattedDate}}' AND '{{ToDatePicker.formattedDate}}'
 ORDER BY "{{data_table.sortOrder.column || 'working_date'}}" {{data_table.sortOrder.order || 'ASC'}}
-LIMIT {{data_table.pageSize}}
-OFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};
+LIMIT 10000;

@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT t.*, p.project_name project, tt.type_name type FROM public.\"timesheet\" t \nLEFT JOIN project p on t.project_id = p.project_id \nLEFT JOIN timesheettype tt on tt.timesheet_type_id = t.timesheet_type_id\nLEFT JOIN member m on m.member_id = t.member_id \nWHERE m.email = '{{appsmith.user.email}}'\nAND t.working_date BETWEEN '{{FromDatePicker.formattedDate}}' AND '{{ToDatePicker.formattedDate}}'\nORDER BY \"{{data_table.sortOrder.column || 'working_date'}}\" {{data_table.sortOrder.order || 'ASC'}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
+      "body": "SELECT t.*, p.project_name project, tt.type_name type FROM public.\"timesheet\" t \nLEFT JOIN project p on t.project_id = p.project_id \nLEFT JOIN timesheettype tt on tt.timesheet_type_id = t.timesheet_type_id\nLEFT JOIN member m on m.member_id = t.member_id \nWHERE m.email = '{{appsmith.user.email}}'\nAND t.working_date BETWEEN '{{FromDatePicker.formattedDate}}' AND '{{ToDatePicker.formattedDate}}'\nORDER BY \"{{data_table.sortOrder.column || 'working_date'}}\" {{data_table.sortOrder.order || 'ASC'}}\nLIMIT 10000;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
