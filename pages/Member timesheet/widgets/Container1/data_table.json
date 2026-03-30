@@ -152,6 +152,9 @@
     },
     {
       "key": "isVisible"
+    },
+    {
+      "key": "primaryColumns.customColumn1.onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -283,7 +286,7 @@
       "label": "Delete",
       "labelColor": "#FFFFFF",
       "menuColor": "#03B365",
-      "onClick": "{{showModal('Delete_Modal')}}",
+      "onClick": "{{\n  DeleteQuery.run()\n    .then(() => InsertTimesheetLog.run({ \n        action: 'DELETE', \n        id: data_table.triggeredRow.timesheet_id, \n        task: data_table.triggeredRow.task_type,\n        date: data_table.triggeredRow.working_day,\n        hours: data_table.triggeredRow.actual_hours,\n        details: 'Member xoá dòng báo cáo' \n    }))\n    .then(() => SelectQuery.run())\n    .then(() => showAlert('✅ Đã xoá và lưu vết thành công!', 'success'))\n    .then(() => closeModal('Delete_Modal'))\n    .catch((e) => showAlert('Lỗi: ' + e.message, 'error'));\n}}",
       "sticky": "",
       "width": 150
     },

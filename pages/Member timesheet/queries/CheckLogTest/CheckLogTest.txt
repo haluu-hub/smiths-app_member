@@ -1,0 +1,1 @@
+SELECT * FROM public."timesheet_history" ORDER BY action_time DESC LIMIT 5;

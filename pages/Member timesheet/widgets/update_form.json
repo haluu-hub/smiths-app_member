@@ -230,10 +230,10 @@
       "key": "borderRadius"
     },
     {
-      "key": "onSubmit"
+      "key": "schema.__root_schema__.children.working_date.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.working_date.defaultValue"
+      "key": "onSubmit"
     }
   ],
   "dynamicTriggerPathList": [
@@ -252,7 +252,7 @@
   "leftColumn": 49,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "onSubmit": "{{UpdateQuery.run(() => SelectQuery.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
+  "onSubmit": "{{\n  UpdateQuery.run()\n    .then(() => InsertTimesheetLog.run({ \n        action: 'UPDATE', \n        id: update_form.formData.timesheet_id, \n        task: update_form.formData.task_type,\n        date: update_form.formData.working_day,\n        hours: update_form.formData.actual_hours,\n        details: 'Thay đổi Actual Hours' \n    }))\n    .then(() => SelectQuery.run())\n    .then(() => showAlert('Cập nhật giờ và lưu vết thành công!', 'success'))\n    .then(() => closeModal('Update_Modal'))\n    .catch((e) => showAlert('Lỗi: ' + e, 'error'));\n}}",
   "originalBottomRow": 86,
   "originalTopRow": 0,
   "parentColumnSpace": 16.3125,

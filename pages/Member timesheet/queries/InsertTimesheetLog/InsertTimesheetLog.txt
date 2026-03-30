@@ -1,0 +1,18 @@
+INSERT INTO public."timesheet_history" (
+    action_type, 
+    timesheet_id, 
+    task_type, 
+    working_day, 
+    actual_hours, 
+    action_by, 
+    details
+)
+VALUES (
+    {{this.params.action}}, 
+    {{this.params.id}}, 
+    {{this.params.task}}, 
+    {{this.params.date}}, 
+    {{this.params.hours}}, 
+    '{{appsmith.user.email}}', 
+    {{this.params.details}}
+);
